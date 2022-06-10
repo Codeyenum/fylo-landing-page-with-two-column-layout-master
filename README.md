@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Codeyenum Fylo Landing Page](https://your-solution-url.com)
+- Solution URL: [Codeyenum Fylo Landing Page](https://www.frontendmentor.io/solutions/fylo-landing-page-with-html-and-css-pHvUFYacab)
 - Live Site URL: [Fylo Landing Page](https://olise-fylo-landing-page.netlify.app/)
 
 ## My process
