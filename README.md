@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/FireShot%20Capture%20001%20-%20Fylo%20landing%20page.png)
+![](./images/FireShot%20Capture%20002%20-%20Fylo%20landing%20page.png)
 
 ### Links
 
