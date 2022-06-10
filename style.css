@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
 :root {
    /* Primary */
    --very_dark_blue: hsl(243, 87%, 12%);
@@ -12,15 +15,29 @@
    --light_gray: hsl(0, 0%, 75%);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-
-
 * {
    box-sizing: border-box;
    margin: 0;
    padding: 0;
 }
+
+/* SCREEN READER AND ACCESSIBILITY */
+
+.sr-only {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0,0,0,0);
+   border: 0;
+}
+
+/* SCREEN READER AND ACCESSIBILITY END */
+
+
+/* START OF GENERIC STYLING */
 
 body {
    display: flex;
@@ -40,6 +57,8 @@ button,
    font-family: 'Open Sans', sans-serif;
    text-align: center;
 }
+
+/* END OF GENERIC STYLING */
 
 
 /* START OF HEADER STYLING */
@@ -190,17 +209,17 @@ button:hover,
    margin: 0.85rem 0;
 }
 
-.op-instruction-link {
+.instruction-link {
    margin: 1.5rem 0;
    text-align: center;
 }
 
-.op-instruction-link p {
+.instruction-link p {
    display: inline-block;
    border-bottom: 1px solid var(--moderate_cyan);
 }
 
-.op-instruction-link a {
+.instruction-link a {
    color: var(--moderate_cyan);
    display: inline-flex;
 
@@ -363,9 +382,9 @@ button:hover,
 @media screen and (min-width: 992px) {
 
    /* HEADER STYLING START */
-   .header {
-      padding: 25px 55px 0;
+   .header {      
       justify-content: space-between;
+      padding: 25px 55px 0;
    }
 
    .header img {
@@ -396,13 +415,19 @@ button:hover,
 
    /* START OF FIRST SECTION STYLING */
 
-   .first-section {
-      background-image: url("./images/bg-curve-desktop.svg");
+   .first-section {      
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
+
+      background-image: url("./images/bg-curve-desktop.svg");
       padding: 0;
       text-align: left;
+   }
+
+   .img_file-illus {
+      margin: 5rem 0 15rem 0;
+      width: 45%;
    }
 
    .first-section>div {
@@ -412,11 +437,6 @@ button:hover,
 
       margin: 0 55px;
       width: 40%;
-   }
-
-   .img_file-illus {
-      margin: 5rem 0 15rem 0;
-      width: 45%;
    }
 
    .first-section-text h2 {
@@ -437,16 +457,13 @@ button:hover,
       column-gap: 0.5rem;
    }
 
-   .sign-up input,
-   .sign-up button {
-      height: 2rem;
-   }
-
    .sign-up input {
+      height: 2rem;
       width: 16rem;
    }
 
    .sign-up button {
+      height: 2rem;
       margin-bottom: 0rem;
       width: 35%;
    }
@@ -486,7 +503,7 @@ button:hover,
       width: 75%;
    }
 
-   .op-instruction-link {
+   .instruction-link {
       margin: 0;
    }
 
@@ -509,23 +526,8 @@ button:hover,
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       height: 17.5rem;
-
-   }
-
-   .form-two {
-      display: flex;
-      flex-direction: column;
-      width: 40%;
-   }
-
-   .form-two input,
-   .form-two button {
-      height: 2.5rem;
-   }
-
-   .form-two input {
-      width: 25rem;
    }
 
    .text-content {
@@ -543,6 +545,22 @@ button:hover,
       font-size: .95rem;
    }
 
+   .form-two {
+      display: flex;
+      flex-direction: column;
+
+      width: 40%;
+   }
+
+   .form-two input,
+   .form-two button {
+      height: 2.5rem;
+   }
+
+   .form-two input {
+      width: 25rem;
+   }
+
    /* END OF LOWER-MAIN SECTION STYLING */
 
    /*START OF FOOTER STYLING */
@@ -551,18 +569,18 @@ button:hover,
       flex-wrap: wrap;
    }
 
+   .footer>img {
+      margin-bottom: 1rem;
+      width: 10rem;      
+   }
+
    .footer>div {
       display: flex;
       flex-direction: row;
       column-gap: 15%;
+
       margin-bottom: 2rem;
       width: 100%;
-   }
-
-   .footer>img {
-      margin-bottom: 1rem;
-      width: 10rem;
-      filter: brightness(0) invert(1);
    }
 
    .contact-info {
@@ -570,10 +588,10 @@ button:hover,
    }
 
    .contact-info a {
+      color: var(--light_grayish_blue);
       margin: 0 1rem;
       text-align: left;
-      text-decoration: none;
-      color: var(--light_grayish_blue);
+      text-decoration: none;      
    }
 
    .footer-nav {
